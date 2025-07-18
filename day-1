@@ -1,0 +1,81 @@
+
+
+17/7/25
+
+What is playwright:
+
+    -playwright is an open sourse automation library created and maintain by microsoft for performing end-to-end testing.
+    -It allows us to automate browers(like chrome,firefox,webkit).
+    -It perform action like
+        -Navigation of web pages.
+        -Clicking button events.
+        -Filling forms
+        -Taking screenshots
+        -Perform complex testing for user.
+
+    -it support single and multipage application automation.
+
+*Key Features of playwright:
+    -playwright support multiple browers.
+    -It supports headless and headedmodes.
+    -Auto waiting
+    -Parallel execution
+    -Visual tesing
+    -Network Mocking
+    -CI/CD ready
+
+*Comman uses:
+    -Login/logout automation
+    -Form auomation
+    -UI Flow Validation
+    -Responsive test.
+    -API Mocking during frontend tesing.
+
+*Software Install:
+    -node js verion: node -v
+    -npm is a reprositry allows to install all the javascript library.It like agent.
+    -Typescript
+        tsc -v
+    -Editor(vs code)
+
+*How to create playwright project
+npm init playwright@latest
+
+*how to start playwright project:
+    -npx playwright test
+
+*To get test report:
+    -npx playwright show-report
+
+*Folder structure:
+    -node_module:All dependency and dev dependency will install in it.
+    package.json:all install dependency entry will found here.
+    package-lock.json:details description of all dependency will found here.
+
+    -test folder:it is use to write own automation script
+    -test-example folder: sample automation script found here,provide playwright
+
+    Note: By default all playwright automation script run in headless mode.
+
+*how to execute automation with headed mode.
+    -npx playwright test --headed
+
+*how to execute automation script in headed mode with single browser.
+     -npx playwright test --headed --project=chromium
+
+*Running the Example Test in UI Mode ia also know as time travel debugging:
+    - npx playwright test --ui
+
+*How to write own automation test script and what are dependency required.
+
+//to update playwright --save-dev
+    - npm install playwright --save-dev
+
+//to install playwright/test:
+    - npm install @playwright/test --save-dev
+
+//how to install typescript module
+    - npm install typescript --save-dev
+
+//to initialize typescript or make compatiable
+    - npx tsc --init // it will generate typescript config and we need to a make changes target="ES6".

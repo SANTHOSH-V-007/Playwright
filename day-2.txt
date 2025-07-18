@@ -1,0 +1,26 @@
+Locator:
+    -It is used to find an element on page at any moment.
+
+1.Id selector(#):select an element base on id.
+    const elementName = page.locator("id:#idNmae);
+
+2. class selector(.):select element based on class name
+    const elementName = page.locator(".className");
+
+3. text selector : selecan element based on what text it contains.
+    const elementName = page.locator("[text='textFormation']");
+
+4. Css attribute : selct an element bases on their css property.
+    Const elementName =  page.locator("css=button#id);
+
+5. xpath selector : select an element bases on their xpath query.
+(In this we use element attribute and its value)
+    const elementName = page.locator("xpath=//button[text()='submit']");
+
+*Browser context:
+    -Browsercontext is an instance of browers or you can say seperate with incoginoto mode.where
+    it store user session and cookies seperately,it is use for authentication.
+    -if there is multiple user then an only then we use,we do not use it single user.
+
+*Handling authentication API(Basic authentication)
+    - Here we write automation test script for authorized user.
