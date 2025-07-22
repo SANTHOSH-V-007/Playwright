@@ -1,0 +1,45 @@
+=======================================================================
+22/07/25
+
+*How to configure the text according to your choice
+
+*Hooks:
+    -Hooks allows us to run code before and after the text.
+    -All Hooks are part of test API  provide by playwright
+    -When we can use Hooks
+
+Ex of Hooks:
+    beforeAll():run code once before all test in file
+    afterAll():run code once after all test in file
+    beforeEach():run code everytime before all test in run file
+    afterEach():run code everytime after all test in run file
+
+*How to use record feature:
+    -It provide test script after performing action on webapplication or webpahes.
+    -To start record feature we use page.pause() method to test code
+
+*use annotation.
+*use of Hooks
+
+test() : it os use to create block for particular test.
+describe(): it is use to wrap multiple test cases together belongings same senarioa.
+
+*Fixture:
+    -It is reusable piece of setup and teardown logical code that you can share across test.
+    -It works like helper function.
+    -playwright provides us build-in fixtures as well as we can create custom fixtures.
+
+Fixture task:
+    you need to reuse login logic for multiple test using playwright fixtures for soucedemo.com website
+objective:
+    -create custom fixture to handle user login
+    -use that fixture in multiple text.
+    -perform  different action on dashboard(check title,add item to card)
+
+*API Mocking In playwright:
+    -Mocking Simulation API response without hitting the real backend.
+
+*Why Mock?
+-Backend is not ready
+-Faster test
+--Simulate error 
