@@ -1,0 +1,32 @@
+============================
+23/07/25
+
+*End to End testing with modularization
+    -creating end to end test cases.
+    -splitting test into resuable module and company.
+    -Data Driven testing with parametrize.
+    -CI/CD Integration with Git and GitHub.
+
+    -In End to End test we verify that the complete fuction of software application is working
+    proper or not from start to finish.
+    -We ensure that integrated component work together seamlessly.
+    -In this we validate the entire workflow from users perspective.
+
+    Ex: real example
+    -user will login ===> product will add to cart => checkout.
+
+    2.splitting test into resuable module and company.
+    LoginPage.ts
+
+    3.Data Driven testing with parametrize.
+    -Pass multiple user crenditals for login test
+
+    4.CI/CD Integration with Git and GitHub.
+    -In this we configure git and github with playwright.
+    -There are two ways to use git amd github with playwright
+        1.while creating playwright project provide yes option for git configuration.
+        2.Create a yml file in existing project and write configuration setting in it.
+            create proper folder structure for yml file.
+            .github/workflow/playwright.yml 
+
+        
