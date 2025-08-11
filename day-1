@@ -79,3 +79,41 @@ npm init playwright@latest
 
 //to initialize typescript or make compatiable
     - npx tsc --init // it will generate typescript config and we need to a make changes target="ES6".
+
+    commend to set up typescript and playwright:
+
+        Check the version for all 
+            -node -v
+            -npm -v
+            -npx tsc -v
+            
+        install playwright files 
+            -npm init playwright@latest
+
+        install typescript files
+            -npm install -g typescript
+
+        create ts.config file
+            -npx tsc --init
+
+        To install playwight in package.json
+            -npm install playwright --save-dev
+
+        To install typescript in package.json
+            -npm install typescript --save-dev
+        
+         
+    Runs the end-to-end tests.
+        - npx playwright test
+
+    Starts the interactive UI mode.
+        -npx playwright test --ui
+  
+    Runs the tests only on Desktop Chrome.
+        -npx playwright test --project=chromium
+
+    Runs the tests in a specific file.
+        -npx playwright test example
+
+    Runs the tests in debug mode.
+        -npx playwright test --debug
